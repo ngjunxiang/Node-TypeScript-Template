@@ -136,7 +136,7 @@ class AuthController {
         try {
             user = await userRepository.findOneOrFail({where: {email: email}});
         } catch (error) {
-            res.status(401).send({
+            res.status(404).send({
                 success: false,
                 data: null,
                 message: "invalid email"
@@ -161,6 +161,7 @@ class AuthController {
             data: null,
             message: "password reset successfully"
         });
+
 
         // Send email with new password
         EmailController.sendForgotPasswordEmail(email, randPassword);
