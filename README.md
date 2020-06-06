@@ -7,10 +7,10 @@ Steps to run this project:
 3. Run `npm start` command
 4. Run `npm run migration:run` command to create users
     * Install PostgreSQL by `brew install postgresql`
-    * Setup user and databse
+    * Setup user and database
         * `psql -U postgres`
-        * `CREATE ROLE recruitlink LOGIN password 'password';`
-        * `CREATE DATABASE recruitlink_db ENCODING 'UTF8' OWNER recruitlink;`
+        * `CREATE ROLE admin LOGIN password 'password';`
+        * `CREATE DATABASE app_db ENCODING 'UTF8' OWNER admin;`
     
 
 

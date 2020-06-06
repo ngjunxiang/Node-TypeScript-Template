@@ -2,9 +2,9 @@
   "type": "postgres",
   "host": "localhost",
   "port": 5432,
-  "username": "recruitlink",
+  "username": "admin",
   "password": "password",
-  "database": "recruitlink_db",
+  "database": "app_db",
   "synchronize": true,
   "logging": false,
   "entities": [
